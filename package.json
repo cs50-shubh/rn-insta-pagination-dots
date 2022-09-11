@@ -1,0 +1,23 @@
+{
+  "name": "react-native-insta-pagination-dots",
+  "version": "1.0.0",
+  "description": "Instagram like carousel pagination dots with React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/cs50-shubh/rn-insta-pagination-dots.git"
+  },
+  "keywords": [
+    "react-native",
+    "carousel-pagination",
+    "dot-pagination",
+    "inatagram-like-pagination",
+    "insta-dots",
+    "insta-carousel-pagination"
+  ],
+  "author": "Shubham Khurana",
+  "license": "ISC"
+}
