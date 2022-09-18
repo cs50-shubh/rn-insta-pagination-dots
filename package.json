@@ -1,14 +1,39 @@
 {
   "name": "react-native-insta-pagination-dots",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Instagram like carousel pagination dots with React Native",
-  "main": "index.js",
+  "main": "src/index.tsx",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "react-native-animated-pagination-dot.podspec",
+    "!lib/typescript/example",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
   "scripts": {
-    "test": "yarn test"
+    "test": "yarn test",
+    "typescript": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "prepare": "bob build",
+    "release": "release-it",
+    "example": "yarn --cwd example",
+    "pods": "cd example && pod-install --quiet",
+    "bootstrap": "yarn example && yarn && yarn pods"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/cs50-shubh/rn-insta-pagination-dots.git"
+  },
+  "dependencies": {
+    "react-use": "^17.3.1"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
@@ -35,6 +60,29 @@
     "react": "*",
     "react-native": "*"
   },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@react-native-community",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "keywords": [
     "react-native",
     "carousel-pagination",
