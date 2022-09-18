@@ -1,6 +1,6 @@
 {
   "name": "react-native-insta-pagination-dots",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Instagram like carousel pagination dots with React Native",
   "main": "lib/commonjs/index.js",
   "source": "src/index",
