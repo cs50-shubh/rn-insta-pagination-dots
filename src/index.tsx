@@ -4,7 +4,7 @@
  * Converted to Typescript on 14/07/2020.
  * Converted to Functional component. on 21/09/2021
  */
-import React, { useCallback, useEffect, useMemo, useRef } from 'react';
+import React, { useCallback, useMemo, useRef } from 'react';
 import { ScrollView, View, ViewStyle, StyleProp } from 'react-native';
 import Dot from './component/Dot';
 import EmptyDot, { defaultEmptyDotSize } from './component/EmptyDot';

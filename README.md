@@ -1,7 +1,7 @@
-react-native-animated-pagination-dot
+react-native-insta-pagination-dots
 =============
 
-Instagram Like Pagination component for React Native simple dot with **moving animation** 
+Instagram Like dot pagination component for React Native 
 
 ## Installation
 
@@ -9,11 +9,11 @@ Installation can be done through `npm`:
 
 npm
 ```shell
-npm i react-native-animated-pagination-dot --save
+npm i react-native-insta-pagination-dots
 ```
 yarn
 ```shell
-npm i react-native-animated-pagination-dot --save
+yarn add react-native-insta-pagination-dots
 ```
 
 -----
@@ -23,7 +23,7 @@ just import component and set current page index and max page index.
 ```js
 import React from 'react'
 import {View} from 'react-native'
-import PaginationDot from 'react-native-animated-pagination-dot'
+import PaginationDot from 'react-native-insta-pagination-dots'
 
 const ExampleDotPaginate:React.FC = ()=>{
     const [curPage] = React.useState(0);

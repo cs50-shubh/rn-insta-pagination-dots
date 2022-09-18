@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "react-native-animated-pagination-dot": ["./src/index"]
+      "react-native-insta-pagination-dots": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

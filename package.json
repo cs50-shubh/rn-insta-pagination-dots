@@ -1,6 +1,6 @@
 {
   "name": "react-native-insta-pagination-dots",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Instagram like carousel pagination dots with React Native",
   "main": "lib/commonjs/index.js",
   "source": "src/index",
@@ -13,15 +13,13 @@
     "android",
     "ios",
     "cpp",
-    "react-native-animated-pagination-dot.podspec",
+    "react-native-insta-pagination-dots.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build"
   ],
   "scripts": {
     "test": "yarn test",
-    "typescript": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
@@ -100,18 +98,19 @@
   "react-native": "src/index.tsx",
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/node_modules",
+      "<rootDir>/lib/"
+    ]
+  },
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",
     "targets": [
       "commonjs",
-      "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
+      "module"
     ]
   }
 }
